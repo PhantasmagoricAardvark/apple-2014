@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: arial; 
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -57,10 +58,51 @@ table {
 
 nav {
 	display: flex;
-	background-color: #6e6e6e;
-	justify-content: space-around;
+	background-image: linear-gradient(#737373 , #5e5e5e 50%, #707070 50%, #8d8d8d);
 	margin: 1rem 0;
-	padding: 0.8rem 0;
+	justify-content: space-around;
+	border-radius: 5px;
+	border-bottom: 1px solid #6d6d6d;
+	border-top: 1px solid #686868;
+}
+
+nav div {
+	background-image: url("nav.svg");
+	height: 2rem;
+	width: 6.3rem;
+	border-right: 1px solid #474747;
+}
+
+.logo {
+	background-position: 50% 30rem;
+}
+
+.store {
+ 	background-position: 50% 210px;
+}
+
+.mac { 
+	background-position: 50% 181px; 
+}
+
+.ipod { 
+	background-position: 50% 152px;
+}
+
+.iphone {
+	 background-position: 50% 121px;
+}
+
+.ipad {
+	 background-position: 50% 91px;
+}
+
+.itunes {
+	 background-position: 50% 61px;
+}
+
+.support {
+	 background-position: 50% 31px;
 }
 
 .main-photo-wrapper  {
@@ -114,10 +156,16 @@ footer {
 	display: grid;
 	grid-template-columns: 3fr 10fr 10fr 3fr;
 	color: grey;
-	font-size: 10.4px;
-	margin-top: 1.5rem;
-	letter-spacing: -0.5px;
-	grid-gap: 30px;
+	font-size: 11px;
+	margin: 1.5rem 0;
+	letter-spacing: 0px;
+	grid-gap: 10px 30px;
+	align-items: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: #08c;
 }
 
 .span1 {
@@ -129,6 +177,10 @@ footer {
 	display: flex;
 	align-items: center;
 	grid-column: 3 / -1;
+}
+
+.span2 img {
+	padding-left: 5px;
 }
 
 .span3 {
